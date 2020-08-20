@@ -31,6 +31,18 @@ public class User implements Comparable<User> {
         return new User();
     }
 
+    public User(String name) {
+        this.name = name;
+    }
+    public User() {
+
+    }
+
+    public User(String name, String lastName) {
+        this.name = name;
+        this.lastName = lastName;
+    }
+
     @Override
     public String toString() {
         return "User{" +
